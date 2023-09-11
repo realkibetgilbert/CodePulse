@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "J4l3CB4MgbLERZ3jIWTkPQVNAvkADkXA3oU+H2jIL2itfQuz2LOvWHICN5r1jnPZF766ybdTwoRpvOysqBqITQ==",
+  "dgSpecHash": "cHn6fJfPIsPIwnYbxRzxU+aUDdcxDJjciv65TvzNP1tC34z6ZeHbr7kmzssH6ea41gVcbHxALZsVK7P2fTceBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gkibet\\Desktop\\Workspace\\Learning\\Udemy\\Codepulse\\API\\CodePulse.API\\CodePulse.API\\CodePulse.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gkibet\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\gkibet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\gkibet\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\gkibet\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\gkibet\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\gkibet\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\gkibet\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\gkibet\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
