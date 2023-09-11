@@ -63,3 +63,5 @@ C:\Users\gkibet\Desktop\Workspace\Learning\Udemy\Codepulse\API\CodePulse.API\Cod
 C:\Users\gkibet\Desktop\Workspace\Learning\Udemy\Codepulse\API\CodePulse.API\CodePulse.API\obj\Debug\net6.0\CodePulse.API.pdb
 C:\Users\gkibet\Desktop\Workspace\Learning\Udemy\Codepulse\API\CodePulse.API\CodePulse.API\obj\Debug\net6.0\CodePulse.API.genruntimeconfig.cache
 C:\Users\gkibet\Desktop\Workspace\Learning\Udemy\Codepulse\API\CodePulse.API\CodePulse.API\obj\Debug\net6.0\ref\CodePulse.API.dll
+C:\Users\gkibet\Desktop\Workspace\Learning\Udemy\Codepulse\API\CodePulse.API\CodePulse.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\gkibet\Desktop\Workspace\Learning\Udemy\Codepulse\API\CodePulse.API\CodePulse.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

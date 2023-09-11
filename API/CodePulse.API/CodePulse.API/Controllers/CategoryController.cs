@@ -24,9 +24,9 @@ namespace CodePulse.API.Controllers
         {
             var categoryDomain = _mapper.Map<Category>(createCategoryRequestDto);
 
-            var category = _categoryRepository.Post(categoryDomain);
+            var category = await _categoryRepository.Post(categoryDomain);
 
-            return StatusCode(StatusCodes.Status200OK,category);
+            return Ok(category);
 
         }
 
