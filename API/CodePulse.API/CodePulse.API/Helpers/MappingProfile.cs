@@ -8,8 +8,9 @@ namespace CodePulse.API.Helpers
     {
         public MappingProfile()
         {
-            //source to destr
+            //source to destination
             CreateMap<CreateCategoryRequestDto, Category>().ReverseMap();
+            CreateMap<Category, CategoryToDisplayDto>().ReverseMap();
         }
     }
 }

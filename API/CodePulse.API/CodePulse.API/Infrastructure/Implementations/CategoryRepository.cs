@@ -1,6 +1,7 @@
 ﻿using CodePulse.API.Core.Entities;
 using CodePulse.API.Core.Interfaces;
 using CodePulse.API.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace CodePulse.API.Infrastructure.Implementations
 {
@@ -12,6 +13,14 @@ namespace CodePulse.API.Infrastructure.Implementations
         {
             _dbContext = dbContext;
         }
+
+        public async Task<List<Category>> Get()
+        {
+            var categories = await _dbContext.Categories.ToListAsync();
+
+            return categories;
+        }
+
         public async Task<Category> Post(Category category)
         {
             var cat = await _dbContext.Categories.AddAsync(category);
