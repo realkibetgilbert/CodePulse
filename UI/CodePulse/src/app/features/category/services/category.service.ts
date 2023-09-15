@@ -17,4 +17,16 @@ export class CategoryService {
   getAllCategories(): Observable<Category[]> {
     return this.http.get<Category[]>(`${environment.apiBaseUrl}/category`);
   }
+  getCategoryById(id: string): Observable<Category> {
+    return this.http.get<Category>(`${environment.apiBaseUrl}/category/${id}`);
+  }
+  updateCategorY(
+    id: string,
+    updateCategory: AddCategoryRequest
+  ): Observable<Category> {
+    return this.http.put<Category>(
+      `${environment.apiBaseUrl}/category/${id}`,
+      updateCategory
+    );
+  }
 }

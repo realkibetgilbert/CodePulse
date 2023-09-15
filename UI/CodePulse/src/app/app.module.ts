@@ -9,6 +9,7 @@ import { AddCategoryComponent } from './features/category/add-category/add-categ
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoryService } from './features/category/services/category.service';
+import { EditCategoryComponent } from './features/category/edit-category/edit-category.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CategoryService } from './features/category/services/category.service';
     NavbarComponent,
     CategoryListComponent,
     AddCategoryComponent,
+    EditCategoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [CategoryService],
