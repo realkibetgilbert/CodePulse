@@ -6,8 +6,9 @@ namespace CodePulse.API.Core.Interfaces
     public interface ICategoryRepository
     {
         Task<Category> Post(Category category);
-        Task<List<Category>>? Get();
-        Task<Category>? GetById(long id);
-        Task<Category>? UpdateCategory(long id,CategoryToUpdateDto category);
+        Task<List<Category?>> Get();
+        Task<Category?> GetById(long id);
+        Task<Category?> UpdateCategory(long id,CategoryToUpdateDto category);
+        Task<Category?> Delete(long id);
     }
 }

@@ -71,5 +71,21 @@ namespace CodePulse.API.Controllers
             return Ok(updateCategory);
 
         }
+
+        [HttpDelete]
+        [Route("{id:long}")]
+        public async Task<IActionResult> Delete([FromRoute] long id)
+        {
+            var category = await _categoryRepository.Delete(id);
+
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(category);
+
+
+        }
     }
 }

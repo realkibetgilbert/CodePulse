@@ -20,4 +20,5 @@ export class CategoryListComponent implements OnInit {
   getAllCategories() {
     this.categories$ = this.categoryService.getAllCategories();
   }
+
 }

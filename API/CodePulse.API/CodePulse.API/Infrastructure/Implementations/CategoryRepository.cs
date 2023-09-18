@@ -3,6 +3,7 @@ using CodePulse.API.Core.Interfaces;
 using CodePulse.API.Dtos;
 using CodePulse.API.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Runtime.InteropServices;
 
 namespace CodePulse.API.Infrastructure.Implementations
 {
@@ -13,6 +14,22 @@ namespace CodePulse.API.Infrastructure.Implementations
         public CategoryRepository(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
+        }
+
+        public async Task<Category?> Delete(long id)
+        {
+            var categoryToDelete = await _dbContext.Categories.FirstOrDefaultAsync(c => c.Id == id);
+
+            if(categoryToDelete != null)
+            {
+                _dbContext.Categories.Remove(categoryToDelete);
+
+                await _dbContext.SaveChangesAsync();
+
+                return categoryToDelete;    
+            }
+
+            return null;
         }
 
         public async Task<List<Category>> Get()
